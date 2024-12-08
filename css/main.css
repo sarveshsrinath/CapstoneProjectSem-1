@@ -1,53 +1,167 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&family=Roboto+Serif:wght@400;700&family=Public+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&family=Roboto+Serif:wght@400;700&family=Public+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;700&display=swap");
 body {
-    background-color: #FDFDFB;
-    margin: 0px;
-
+  background-color: #fdfdfb;
+  margin: 0;
 }
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 48px;
-    align-items: center;
-
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 48px;
+  align-items: center;
 }
 .navbar h1 {
-    font-size: 42px;
-    font-family: 'Source Serif 4', serif;
-    font-weight: 500;
-    
+  font-size: 42px;
+  font-family: "Source Serif 4", serif;
+  font-weight: 500;
 }
 .navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-    font-size: 28px;
-    font-family: 'Roboto Serif', serif;
-    font-weight: 100;
-    cursor: pointer;
-    
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-size: 28px;
+  font-family: "Roboto Serif", serif;
+  font-weight: 100;
+  cursor: pointer;
 }
-.navbar ul li:hover{
-    color: grey;
-    transition-duration: 0.2s;
+.navbar ul li:hover {
+  color: grey;
+  transition-duration: 0.2s;
 }
 
 header h1 {
-    font-family: 'Roboto Serif', serif;
-    font-size: 120px;
-    font-weight: 700;
-    line-height: 120px;
-    letter-spacing: -0.02em;
-    text-align: center;
+  font-family: "Roboto Serif", serif;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 120px;
+  text-align: center;
 }
 header img {
-    width: 90%;
-    height: auto;
-    border-radius: 28px 0px 0px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+  width: 90%;
+  height: auto;
+  border-radius: 28px 0px 0px 0px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 58px;
+  padding: 0 50px;
+  margin-top: 148px;
+}
+.grid-section img {
+  width: 100%;
+}
+.grid-header {
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  margin: 0px;
+}
+.paragraph {
+  font-family: "Public Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 24px;
+  text-align: left;
+  margin: 0px;
+  color: #252e149e;
+}
+.image {
+  transition: transform 0.3s ease;
+}
 
+.image:hover {
+  transform: scale(1.03);
+}
+.paragraph-division {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 104px;
+}
+.paragraph-section {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+}
+
+.project-summary {
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+}
+
+.project-header {
+  font-family: "Roboto Serif", serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  margin: auto;
+}
+
+.info-division {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.about-division h3 {
+  font-family: "Roboto Serif", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 52px;
+  text-align: center;
+  padding: 96px 222px;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(
+    63.68% 40.76% at 50% 103.08%,
+    rgba(96, 120, 53, 0.16) 0%,
+    rgba(253, 253, 251, 0) 100%
+  );
+  padding-bottom: 214px;
+}
+.text-content h3 {
+  font-family: "Roboto Serif", serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 68px;
+  text-align: center;
+  margin-top: 200px;
+}
+.text-content p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+}
+.button1 {
+  font-family: "Public Sans", sans-serif;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  cursor: pointer;
+  background-color: rgba(85, 107, 47, 1);
+  border-radius: 16px;
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  transition: transform 0.3s ease;
+}
+.button1:hover {
+  transform: scale(1.03);
 }
