@@ -289,8 +289,6 @@ header img {
     align-items: center;
   }
 }
-
-/* For small phones */
 @media (max-width: 480px) {
   .navbar h1 {
     font-size: 28px;
