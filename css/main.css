@@ -194,3 +194,139 @@ header img {
   transform: scale(1.1);
   background-color: beige;
 }
+
+/* media query tags */
+/* For smaller screens (tablets and large phones) */
+@media (max-width: 1024px) {
+  .navbar ul {
+    gap: 20px;
+    font-size: 20px;
+  }
+
+  header h1 {
+    font-size: 80px;
+    line-height: 90px;
+  }
+
+  .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .paragraph-division {
+    grid-template-columns: 1fr;
+    padding: 50px;
+  }
+
+  .about-division h3 {
+    font-size: 36px;
+    line-height: 42px;
+    padding: 50px;
+  }
+
+  .text-content h3 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .text-content p {
+    font-size: 20px;
+  }
+
+  .info-division {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+/* For medium-sized phones */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .navbar h1 {
+    font-size: 36px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 60px;
+    line-height: 70px;
+    text-align: left;
+  }
+
+  .grid-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .paragraph-division {
+    padding: 30px;
+  }
+
+  .about-division h3 {
+    font-size: 28px;
+    padding: 30px;
+  }
+
+  .text-content h3 {
+    font-size: 36px;
+  }
+
+  .text-content p {
+    font-size: 18px;
+  }
+
+  .info-division {
+    align-items: center;
+  }
+}
+
+/* For small phones */
+@media (max-width: 480px) {
+  .navbar h1 {
+    font-size: 28px;
+  }
+
+  .navbar ul {
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .grid-header,
+  .paragraph {
+    font-size: 14px;
+  }
+
+  .about-division h3 {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .text-content h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .button1,
+  .footer-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
